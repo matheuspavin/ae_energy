@@ -154,6 +154,7 @@ The next lines describe my answers to the problems proposed. The project is sent
 * There is no structure for end2end testing, only for unit test.
 * The use of JS limits the control and security gave by structured types on TS.
 * Unfortunately the middleware of error is not working as it should.
+* Im not filtering any data, unfortunately didn't had time for that.
 
 
 

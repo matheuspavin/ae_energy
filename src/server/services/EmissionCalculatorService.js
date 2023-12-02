@@ -1,8 +1,7 @@
 import emissions from '../../../data/emissions.js';
 
-export const getEmissionData = function (emissionData) {
-    console.log('aqui')
-    switch (emissionData) {
+export const getEmissionData = function (emissionType) {
+    switch (emissionType) {
         case 'carbonmonoxide':
             return emissions.carbonmonoxide;
         case 'methane':
@@ -16,4 +15,20 @@ export const getEmissionData = function (emissionData) {
     }
 }
 
-export default getEmissionData;
+export const getEmissionDataByInterval = function (emissionType, interval) {
+    const emissionData = getEmissionData(emissionType);
+    if (interval.length === 2) {
+        if (!isNaN(Date.parse(interval[0])) && !isNaN(Date.parse(interval[1]))) {
+            return emissionData;
+        } else {
+            return emissionData;
+        }
+    } else {
+        return emissionData;
+    }
+
+    //TODO - implement error instead of returning the data
+}
+
+
+    export default getEmissionData;
