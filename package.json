@@ -1,0 +1,16 @@
+{
+  "name": "aeenergy",
+  "version": "1.0.0",
+  "description": "AE Energy - Challenge",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node src/index.js"
+  },
+  "author": "Matheus Pavin Pedroso",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "type": "module"
+}
