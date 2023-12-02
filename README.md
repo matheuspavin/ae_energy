@@ -1,3 +1,49 @@
+
+TASK ANSWERS
+===
+Hi,
+First of all, thank you for the opportunity to do this challenge, and im sorry that due to the time, is not possible to finish (I will most certain finish it aside anyway).
+The next lines describe my answers to the problems proposed. The project is sent as a zip file, with the explanation in this README.md and also available at: https://github.com/matheuspavin/ae_energy
+
+
+### Task 1
+
+* The task is implemented and tested
+* Run yarn install
+* Run yarn run test
+
+
+### Task 2
+
+### Task 2a
+
+* Decided to keep the VanillaJS structure but using modules, so I could deliver all in one project.
+* ES6 structure with JS, albeit in a quite a descent lately, still valuable for small project, area which most probably TS would be a overkill for the small content.
+**SHORTCOMES**
+* There is no test for all the functions.
+* There is no structure for end2end testing, only for unit test.
+* The use of JS limits the control and security gave by structured types on TS.
+* Unfortunately the middleware of error is not working as it should.
+* Im not filtering any data, unfortunately didn't had time for that.
+
+
+
+### Task 3
+
+* Thats a very tricky question with promises. Running this locally shows some interesting outcome, which is to log the error 'BOOOM'
+* This is particularly interesting giving it that the promise is explicity rejected in the first line.
+* My understandment in the beginning is that the ".then" would not be executed, since the promise is rejected, and that's true, it didnt log any '.then'
+* But then the catch is called, since it explicity runned a rejection, logging the content of the error on the console, although in a very strange way, because the catch have only (console.log)
+
+
+Have a great weekend you all.
+---
+**Matheus Pavin Pedroso**
+**pavinmatheus@gmail.com**
+**+49017632064694**
+---
+
+
 backend-nodejs-challenge
 ========================
 
@@ -129,45 +175,3 @@ Final Notes
 
 Have fun during the task - We wish you best of luck! 🚀
 
-
-
-Hi,
-First of all, thank you for the opportunity to do this challenge, and im sorry that due to the time, is not possible to finish (I will most certain finish it aside anyway).
-The next lines describe my answers to the problems proposed. The project is sent as a zip file, with the explanation in this README.md and also available at: https://github.com/matheuspavin/ae_energy
-
-
-### Task 1
-
-* The task is implemented and tested
-* Run yarn install
-* Run yarn run test
-
-
-### Task 2
-
-### Task 2a
-
-* Decided to keep the VanillaJS structure but using modules, so I could deliver all in one project.
-* ES6 structure with JS, albeit in a quite a descent lately, still valuable for small project, area which most probably TS would be a overkill for the small content.
-**SHORTCOMES**
-* There is no test for all the functions.
-* There is no structure for end2end testing, only for unit test.
-* The use of JS limits the control and security gave by structured types on TS.
-* Unfortunately the middleware of error is not working as it should.
-* Im not filtering any data, unfortunately didn't had time for that.
-
-
-
-### Task 3
-
-* Thats a very tricky question with promises. Running this locally shows some interesting outcome, which is to log the error 'BOOOM'
-* This is particularly interesting giving it that the promise is explicity rejected in the first line.
-* My understandment in the beginning is that the ".then" would not be executed, since the promise is rejected, and that's true, it didnt log any '.then'
-* But then the catch is called, since it explicity runned a rejection, logging the content of the error on the console, although in a very strange way, because the catch have only (console.log)
-
-
-Have a great weekend you all.
----
-**Matheus Pavin Pedroso**
-**pavinmatheus@gmail.com**
-**+49017632064694**
