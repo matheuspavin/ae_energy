@@ -1,12 +1,12 @@
-import helloHandler from "../handlers/SimpleHandler.js";
+import emissionCalculatorHandler from "../handlers/EmissionCalculatorHandler.js";
 
 export const routes = [
     {
         method: 'get',
-        path: '/',
-        handler: helloHandler
+        path: '/emissions/:emissionType',
+        middleware: [],
+        handler: emissionCalculatorHandler
     }
 ];
-
 
 export default routes;

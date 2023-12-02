@@ -1,11 +1,8 @@
+import getEmissionData from "../services/EmissionCalculatorService.js";
 
-
-
-
-
-export const helloHandler = (req, res) => {
-    res.send(JSON.stringify(simpleRes));
+const emissionCalculatorHandler = (req, res) => {
+    res.send(JSON.stringify(getEmissionData(req.params.emissionType)));
 }
 
 
-export default helloHandler;
+export default emissionCalculatorHandler;

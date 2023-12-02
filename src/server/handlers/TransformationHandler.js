@@ -1,24 +1,8 @@
-function transformation(obj) {
-    switch (typeof obj) {
-        case 'number':
-            return obj + 1;
-        case 'string':
-            return `${obj} AE`;
-        case 'object':
-            if (Array.isArray(obj)) {
-                return obj.map(item => transformation(item));
-            } else {
-                return Object.keys(obj).reduce((acc, key) => {
-                    acc[key] = transformation(obj[key]);
-                    return acc;
-                }, {});
-            }
-        default:
-            return obj;
-    }
-}
+import { transformation } from '../services/TransformationService.js';
 
 export const transformationHandler = (req, res) => {
     const transformed = transformation(req.body);
     res.send(JSON.stringify(transformed));
 }
+
+export default transformationHandler;
