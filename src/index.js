@@ -12,10 +12,6 @@ routes.forEach((route) => {
     app[method](path, handler);
 });
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-});
-
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
